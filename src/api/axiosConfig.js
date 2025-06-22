@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://job-dashboard-backend-bdi6.onrender.com",
   withCredentials: true, // send cookies with request
 });
 
