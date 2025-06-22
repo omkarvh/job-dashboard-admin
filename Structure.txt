@@ -1,0 +1,17 @@
+client/
+├── public/
+├── src/
+│   ├── assets/              ← Images, icons, logos
+│   ├── components/          ← Reusable components (NavBar, Button, Input)
+│   ├── pages/               ← Main pages (Login, Register, Dashboard, Home, Apply)
+│   ├── services/            ← API calls using Axios
+│   ├── hooks/               ← Custom hooks (optional)
+│   ├── utils/               ← Helper functions (auth checker, validators)
+│   ├── layout/              ← Page wrappers, layout structure (optional)
+│   ├── context/             ← Auth context for admin login state
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env
+├── package.json
+└── vite.config.js
