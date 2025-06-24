@@ -6,14 +6,14 @@ import Dashboard from "./pages/Dashboard.jsx";
 import PrivateRoute from "./components/ProtectedRoute.jsx"; // ✅ add this
 import JobsList from "./pages/JobsList.jsx";
 
-
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AdminLogin />} />
+        <Route path="/" element={<JobsList />} /> {/* ✅ change here */}
+        <Route path="/admin-login" element={<AdminLogin />} />
         <Route
           path="/dashboard"
           element={
@@ -22,11 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </PrivateRoute>
           }
         />
-        <Route path="/jobs" element={<JobsList />} />
       </Routes>
-
-      
-      
     </BrowserRouter>
   </React.StrictMode>
 );
