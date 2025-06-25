@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import API from "../api/axiosConfig";
 import ApplyForm from "../components/ApplyForm";
 import { Link } from "react-router-dom";
+import "../styles/jobsList.css";
+
 
 const JobsList = () => {
   const [jobs, setJobs] = useState([]);
@@ -40,13 +42,13 @@ const JobsList = () => {
           Admin Login
         </a>
       </div>
-
+    <h1 className="text-3xl font-bold text-center mb-6">Welcome to Job Portal</h1>
       <h2 className="text-3xl font-bold text-center mb-6">Jobs Openings</h2>
 
       {/* Job cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {jobs.map((job) => (
-          <div key={job.id} className="bg-amber-200 shadow-md rounded-lg p-6">
+          <div key={job.id} className="bg-amber-200 shadow-md rounded-lg p-6 job-card">
             <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
             <p><strong>Company:</strong> {job.company}</p>
             <p><strong>Job Desc:</strong> {job.description}</p>

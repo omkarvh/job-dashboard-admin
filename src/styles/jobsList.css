@@ -1,0 +1,37 @@
+.job-card{
+
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+   border-radius: 0px;
+background: #e0e0e0;
+box-shadow:  15px 15px 30px #9f9f9f,
+             -15px -15px 30px #ffffff;
+
+}
+/* From Uiverse.io by H_K_MENON */ 
+/* this is the code  */
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px ();
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const JobCard = ({ job, onViewApplicants, onDelete }) => {
   // Truncate the job description to 250 characters
   const truncatedDescription =
