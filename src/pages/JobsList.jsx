@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API from "../api/axiosConfig";
 import ApplyForm from "../components/ApplyForm";
+import { Link } from "react-router-dom";
 
 const JobsList = () => {
   const [jobs, setJobs] = useState([]);
@@ -10,6 +11,8 @@ const JobsList = () => {
       try {
         const res = await API.get("/jobs");
         setJobs(res.data.jobs); // ✅ assuming API returns { jobs: [...] }
+        console.log("Fetched jobs:", jobs);
+
       } catch (err) {
         console.error("Failed to fetch jobs", err);
       }
