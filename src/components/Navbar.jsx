@@ -9,7 +9,7 @@ const Navbar = () => {
     try {
       await API.post("/auth/logout");
       localStorage.clear();
-      navigate("/login");
+      navigate("/");
     } catch (err) {
       console.error("Logout failed", err);
     }

@@ -54,9 +54,9 @@ const ApplyForm = ({ jobId, onClose }) => {
           <input type="text" name="name" placeholder="Your Name" required onChange={handleChange} className="w-full p-2 border rounded" />
           <input type="email" name="email" placeholder="Email" required onChange={handleChange} className="w-full p-2 border rounded" />
           <input type="tel" name="phone" placeholder="Phone Number" required onChange={handleChange} className="w-full p-2 border rounded" />
-          <input type="text" name="experience" placeholder="Years of Experience" onChange={handleChange} className="w-full p-2 border rounded" />
+          <input type="text" name="experience" placeholder="Years of Experience" required onChange={handleChange} className="w-full p-2 border rounded" />
           <input type="text" name="currentSalary" placeholder="Current Salary" onChange={handleChange} className="w-full p-2 border rounded" />
-          <input type="text" name="expectedSalary" placeholder="Expected Salary" onChange={handleChange} className="w-full p-2 border rounded" />
+          <input type="text" name="expectedSalary" placeholder="Expected Salary" required onChange={handleChange} className="w-full p-2 border rounded" />
           <p>Click below to upload resume</p>
           <input type="file" name="resume" accept=".pdf,.jpg,.png" required onChange={handleChange} className="w-full" />
           <button type="submit" className="bg-blue-600 text-white w-full py-2 rounded hover:bg-blue-700">Submit</button>
